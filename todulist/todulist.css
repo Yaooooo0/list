@@ -1,28 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
-body{
+
+body {
     background-color: #CDCDCD;;
 }
-header{
+
+header {
     width: 100%;
     height: 50px;
-    background-color:rgba(47,47,47,0.98);
+    background-color: rgba(47, 47, 47, 0.98);
 }
-header .son{
+
+header .son {
     max-width: 620px;
     height: 100%;
     margin: 0 auto;
 }
-header .son h2{
+
+header .son h2 {
     width: 100px;
     height: 100%;
     float: left;
     line-height: 50px;
     color: white;
 }
-header .son input{
+
+header .son input {
     width: 60%;
     display: block;
     float: right;
@@ -30,54 +36,90 @@ header .son input{
     margin-top: 13px;
     text-indent: 10px;
     border-radius: 5px;
-    box-shadow: 0 1px 0 rgba(255,255,255,0.24), 0 1px 6px rgba(0,0,0,0.45) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.24), 0 1px 6px rgba(0, 0, 0, 0.45) inset;
     border: none;
+    outline: none;
 }
-.main{
+
+.main {
     max-width: 620px;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
 
 }
-.main h2{
+
+.main h2 {
     margin: 20px 0;
 }
-.main h2 div{
+
+.main h2 div {
     width: 20px;
     height: 20px;
-    border-radius:50% ;
+    border-radius: 50%;
     float: right;
     background-color: #e6e6e6;
     line-height: 20px;
     text-align: center;
     font-size: 14px;
 }
-  .doingson,.doneson{
-        width: auto;
-        height: 32px;
-        background-color: #fff;
-        margin-bottom: 10px;
-        border-left: 5px solid #629a9c;
-        border-radius: 3px;
-    }
-    .doneson{
-        border-left: 5px solid #999;
-        opacity: 0.5;
-    }
-    .doingson>div>input,.doneson>div>input{
-        width: 22px;
-        height: 22px;
-        cursor: pointer;
-        display: block;
-        float: left;
-        margin: 5px;
-    }
-    .doingson>div>p,.doneson>div>p{
-        width: 80%;
-        height: 32px;
-        float: left;
-        /*background-color: red;*/
-        line-height: 32px;
-        text-indent: 1em;
-    }
+
+main>div>div {
+    width: auto;
+    height: 32px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-left: 5px solid #629a9c;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+}
+
+.doneson>div {
+    border-left: 5px solid #999;
+    opacity: 0.5;
+}
+
+.doingson > div > input, .doneson > div > input {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin: 5px;
+}
+
+.doingson > div > p, .doneson > div > p {
+    width: 80%;
+    height: 32px;
+    float: left;
+    /*background-color: red;*/
+    line-height: 32px;
+    text-indent: 1em;
+}
+
+.doingson > div > .del, .doneson > div > .del {
+    display: block;
+    width: 14px;
+    height: 12px;
+    border-radius: 14px;
+    border: 6px double #FFF;
+    background: #CCC;
+    line-height: 14px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    float: right;
+    margin-top:5px ;
+    margin-right: 5px;
+}
+
+footer {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+footer a{
+    color: #999;
+}
